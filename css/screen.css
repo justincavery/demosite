@@ -578,7 +578,7 @@ nav ul li {
     nav ul li:hover a, nav ul li:active a {
       color: white;
       text-decoration: none; }
-  @media (min-width: 31.25em) {
+  @media (min-width: 50em) {
     /* line 71, ../sass/screen.scss */
     nav ul li {
       width: 20%;
