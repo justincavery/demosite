@@ -660,10 +660,19 @@ form label {
 /* line 164, ../sass/screen.scss */
 .product {
   margin-bottom: 1em; }
-  /* line 167, ../sass/screen.scss */
+  /* line 166, ../sass/screen.scss */
   .product:after {
     border-bottom: 1px solid #333333;
     width: 80%;
     margin: 0 auto;
     content: ' ';
     display: block; }
+  @media (min-width: 50em) {
+    /* line 164, ../sass/screen.scss */
+    .product {
+      width: 25%;
+      float: left;
+      padding: 0 1em; }
+      /* line 177, ../sass/screen.scss */
+      .product:last-of-type {
+        clear: both; } }

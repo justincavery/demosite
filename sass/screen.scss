@@ -163,13 +163,18 @@ form label {
 
 .product {
 	margin-bottom: 1em;
-
 	&:after {
 		border-bottom: 1px solid $hightlight-color;
 		width: 80%;
 		margin:0 auto;
 		content: ' ';
 		display:block;
+	}
+	@include breakpoint(tablet) {
+		width: 25%;
+		float:left;
+		padding: 0 1em;
+		&:last-of-type {clear:both;}
 	}
 }
 
