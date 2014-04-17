@@ -297,7 +297,7 @@ table {
 td {
   vertical-align: top; }
 
-/* line 5, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -318,38 +318,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
@@ -554,7 +554,8 @@ nav ul li {
   margin-bottom: 0.35em;
   line-height: 1.2;
   color: #888888;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  margin-bottom: 0; }
   /* line 44, ../sass/_typography.scss */
   nav ul li a {
     color: #888888;
@@ -563,30 +564,34 @@ nav ul li {
     nav ul li a:hover, nav ul li a:focus {
       color: #626262;
       text-decoration: underline; }
+  /* line 62, ../sass/screen.scss */
+  nav ul li:hover, nav ul li:active {
+    background-color: #888888;
+    text-color: #eeeeee; }
   @media (min-width: 37.5em) {
     /* line 58, ../sass/screen.scss */
     nav ul li {
       width: 20%;
       float: left; } }
-  /* line 66, ../sass/screen.scss */
+  /* line 71, ../sass/screen.scss */
   nav ul li a {
     display: block;
     line-height: 3em; }
 
-/* line 76, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .search {
   padding-bottom: 1em;
   border-bottom: 1px solid #cccccc;
   margin-bottom: 1em;
   width: 100%; }
-  /* line 79, ../sass/screen.scss */
+  /* line 84, ../sass/screen.scss */
   .search input {
     width: 70%; }
-  /* line 82, ../sass/screen.scss */
+  /* line 87, ../sass/screen.scss */
   .search button {
     width: 25%; }
 
-/* line 97, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 input[type="submit"],
 button {
   width: 25%;
@@ -597,7 +602,7 @@ button {
   font-size: 1em;
   border: none; }
 
-/* line 108, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 input[type="email"],
 input[type="password"],
 input[type="text"],
@@ -628,11 +633,11 @@ textarea {
   max-width: 500px;
   border: 1px #cccccc solid; }
 
-/* line 125, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 form label {
   display: block; }
 
-/* line 131, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .button {
   margin: 1em 0 0;
   padding: 0.25em 1em 0.25em 0.7em;
@@ -641,10 +646,10 @@ form label {
   font-size: 1em;
   border: none; }
 
-/* line 142, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .product {
   margin-bottom: 1em; }
-  /* line 145, ../sass/screen.scss */
+  /* line 150, ../sass/screen.scss */
   .product:after {
     border-bottom: 1px solid #333333;
     width: 80%;
