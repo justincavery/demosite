@@ -47,8 +47,21 @@ p {
 
 // Logo & Branding //
 
+
 .company-branding {
-	@include divider-bottom;
+	@include breakpoint (phablet){
+		width: 70%;
+		float:right;
+		padding-left: 1em;
+	}
+}
+
+.logo {
+
+	@include breakpoint (phablet){
+		width: 30%;
+		float:left;
+	}
 }
 
 // Navigation //
@@ -61,7 +74,10 @@ nav {
 			@include heading-4;
 			&:hover, &:active {
 				background-color: $text-color;
-				text-color: $background-color-subtle;
+				
+				a {color: $background-color;
+					text-decoration: none;
+					}
 			}
 			margin-bottom:0;
 			@include breakpoint(phablet){
@@ -71,6 +87,7 @@ nav {
 			a {
 				display: block;
 				line-height: 3em;
+				text-decoration: none;
 			}
 		}
 	}

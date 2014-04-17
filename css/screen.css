@@ -539,13 +539,20 @@ p {
 .container {
   padding: 0 0.25em; }
 
-/* line 50, ../sass/screen.scss */
-.company-branding {
-  padding-bottom: 1em;
-  border-bottom: 1px solid #cccccc;
-  margin-bottom: 1em; }
+@media (min-width: 31.25em) {
+  /* line 51, ../sass/screen.scss */
+  .company-branding {
+    width: 70%;
+    float: right;
+    padding-left: 1em; } }
 
-/* line 58, ../sass/screen.scss */
+@media (min-width: 31.25em) {
+  /* line 59, ../sass/screen.scss */
+  .logo {
+    width: 30%;
+    float: left; } }
+
+/* line 71, ../sass/screen.scss */
 nav ul li {
   border-bottom: 1px solid #ccc;
   text-align: center;
@@ -564,34 +571,38 @@ nav ul li {
     nav ul li a:hover, nav ul li a:focus {
       color: #626262;
       text-decoration: underline; }
-  /* line 62, ../sass/screen.scss */
+  /* line 75, ../sass/screen.scss */
   nav ul li:hover, nav ul li:active {
-    background-color: #888888;
-    text-color: #eeeeee; }
-  @media (min-width: 37.5em) {
-    /* line 58, ../sass/screen.scss */
+    background-color: #888888; }
+    /* line 78, ../sass/screen.scss */
+    nav ul li:hover a, nav ul li:active a {
+      color: white;
+      text-decoration: none; }
+  @media (min-width: 31.25em) {
+    /* line 71, ../sass/screen.scss */
     nav ul li {
       width: 20%;
       float: left; } }
-  /* line 71, ../sass/screen.scss */
+  /* line 87, ../sass/screen.scss */
   nav ul li a {
     display: block;
-    line-height: 3em; }
+    line-height: 3em;
+    text-decoration: none; }
 
-/* line 81, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .search {
   padding-bottom: 1em;
   border-bottom: 1px solid #cccccc;
   margin-bottom: 1em;
   width: 100%; }
-  /* line 84, ../sass/screen.scss */
+  /* line 101, ../sass/screen.scss */
   .search input {
     width: 70%; }
-  /* line 87, ../sass/screen.scss */
+  /* line 104, ../sass/screen.scss */
   .search button {
     width: 25%; }
 
-/* line 102, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 input[type="submit"],
 button {
   width: 25%;
@@ -602,7 +613,7 @@ button {
   font-size: 1em;
   border: none; }
 
-/* line 113, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 input[type="email"],
 input[type="password"],
 input[type="text"],
@@ -633,11 +644,11 @@ textarea {
   max-width: 500px;
   border: 1px #cccccc solid; }
 
-/* line 130, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 form label {
   display: block; }
 
-/* line 136, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .button {
   margin: 1em 0 0;
   padding: 0.25em 1em 0.25em 0.7em;
@@ -646,10 +657,10 @@ form label {
   font-size: 1em;
   border: none; }
 
-/* line 147, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .product {
   margin-bottom: 1em; }
-  /* line 150, ../sass/screen.scss */
+  /* line 167, ../sass/screen.scss */
   .product:after {
     border-bottom: 1px solid #333333;
     width: 80%;
