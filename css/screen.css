@@ -1,0 +1,653 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/**
+ * reset.css
+ *
+ * Adapted from:
+ * Normalize.css by Nicolas Gallagher and Jonathan Neal: https://github.com/necolas/normalize.css/
+ * HTML5 boilerplate: http://html5boilerplate.com/
+ * HTML5 Doctor Reset by Eric Meyer and Richard Clark: html5doctor.com/html-5-reset-stylesheet/
+ *
+ * Modified by Elliot Jay Stocks
+ */
+/* line 13, ../sass/_reset.scss */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* line 83, ../sass/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block; }
+
+/* line 94, ../sass/_reset.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* line 98, ../sass/_reset.scss */
+audio:not([controls]) {
+  display: none; }
+
+/* line 100, ../sass/_reset.scss */
+[hidden] {
+  display: none; }
+
+/* line 102, ../sass/_reset.scss */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* line 104, ../sass/_reset.scss */
+body {
+  margin: 0; }
+
+/* line 106, ../sass/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+/* line 108, ../sass/_reset.scss */
+a {
+  color: blue; }
+
+/* line 110, ../sass/_reset.scss */
+a:focus {
+  outline: thin dotted; }
+
+/* line 112, ../sass/_reset.scss */
+li {
+  list-style: none; }
+
+/* line 114, ../sass/_reset.scss */
+abbr[title] {
+  border-bottom: none; }
+
+/* line 116, ../sass/_reset.scss */
+b,
+strong {
+  font-weight: 700; }
+
+/* line 119, ../sass/_reset.scss */
+i,
+em,
+dfn {
+  font-style: italic; }
+
+/* line 123, ../sass/_reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 125, ../sass/_reset.scss */
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* line 127, ../sass/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+/* line 129, ../sass/_reset.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace; }
+
+/* line 134, ../sass/_reset.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/* line 136, ../sass/_reset.scss */
+q {
+  quotes: none; }
+
+/* line 138, ../sass/_reset.scss */
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+/* line 141, ../sass/_reset.scss */
+small {
+  font-size: 85%; }
+
+/* line 143, ../sass/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 146, ../sass/_reset.scss */
+sup {
+  top: -0.5em; }
+
+/* line 148, ../sass/_reset.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 150, ../sass/_reset.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle; }
+
+/* line 152, ../sass/_reset.scss */
+label {
+  cursor: pointer; }
+
+/* line 154, ../sass/_reset.scss */
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+/* line 158, ../sass/_reset.scss */
+button,
+input {
+  line-height: normal;
+  *overflow: visible; }
+
+/* line 161, ../sass/_reset.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+/* line 166, ../sass/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; }
+
+/* line 169, ../sass/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 170, ../sass/_reset.scss */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 172, ../sass/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 175, ../sass/_reset.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+/* line 177, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 179, ../sass/_reset.scss */
+td {
+  vertical-align: top; }
+
+/* line 5, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/*********************
+CLEARFIXIN'
+*********************/
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 31, ../sass/_mixins.scss */
+.clearfix {
+  zoom: 1; }
+  /* line 32, ../sass/_mixins.scss */
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table; }
+  /* line 37, ../sass/_mixins.scss */
+  .clearfix:after {
+    clear: both; }
+
+/*********************
+BORDER RADIUS
+*********************/
+/*
+NOTE: For older browser support (and some mobile),
+don't use the shorthand to define *different* corners.
+
+USAGE: @include rounded(4px);
+
+*/
+/*
+Instead of having a seperate mixin for the different
+borders, we're using the mixin from 320 & Up to make
+things easier to use.
+
+USAGE: @include border-radius(4px,4px,0,0);
+
+*/
+/*********************
+TRANISTION
+*********************/
+/* @include transition(all,2s,ease-out); */
+/*********************
+BREAKPOINTS
+
+*********************/
+/* line 1, ../sass/_variables.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*********************
+TOOLS
+*********************/
+/* http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+/* line 30, ../sass/_variables.scss */
+.image-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+/*********************
+TYPOGRAPHY
+*********************/
+/* line 80, ../sass/_typography.scss */
+h1 {
+  font-family: arial, "helvetica neue", helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: #888888;
+  font-size: 2.5em; }
+  /* line 44, ../sass/_typography.scss */
+  h1 a {
+    color: #888888;
+    text-decoration: none; }
+    /* line 33, ../sass/_typography.scss */
+    h1 a:hover, h1 a:focus {
+      color: #626262;
+      text-decoration: underline; }
+
+/* line 84, ../sass/_typography.scss */
+h2 {
+  font-family: arial, "helvetica neue", helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: #888888;
+  font-size: 1.8em; }
+  /* line 44, ../sass/_typography.scss */
+  h2 a {
+    color: #888888;
+    text-decoration: none; }
+    /* line 33, ../sass/_typography.scss */
+    h2 a:hover, h2 a:focus {
+      color: #626262;
+      text-decoration: underline; }
+
+/* line 88, ../sass/_typography.scss */
+h3 {
+  font-family: arial, "helvetica neue", helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: #888888;
+  font-size: 1.4em; }
+  /* line 44, ../sass/_typography.scss */
+  h3 a {
+    color: #888888;
+    text-decoration: none; }
+    /* line 33, ../sass/_typography.scss */
+    h3 a:hover, h3 a:focus {
+      color: #626262;
+      text-decoration: underline; }
+
+/* line 92, ../sass/_typography.scss */
+h4 {
+  font-family: arial, "helvetica neue", helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: #888888;
+  font-size: 1.2em; }
+  /* line 44, ../sass/_typography.scss */
+  h4 a {
+    color: #888888;
+    text-decoration: none; }
+    /* line 33, ../sass/_typography.scss */
+    h4 a:hover, h4 a:focus {
+      color: #626262;
+      text-decoration: underline; }
+
+/* line 96, ../sass/_typography.scss */
+h5 {
+  font-family: arial, "helvetica neue", helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: #888888;
+  font-size: 1em; }
+  /* line 44, ../sass/_typography.scss */
+  h5 a {
+    color: #888888;
+    text-decoration: none; }
+    /* line 33, ../sass/_typography.scss */
+    h5 a:hover, h5 a:focus {
+      color: #626262;
+      text-decoration: underline; }
+
+/* line 14, ../sass/screen.scss */
+body {
+  background-color: white;
+  color: #888888; }
+
+/* line 19, ../sass/screen.scss */
+a, a:link, a:visited {
+  color: #555555;
+  text-decoration: none; }
+
+/* line 24, ../sass/screen.scss */
+a:hover {
+  color: #2f2f2f; }
+
+/* line 28, ../sass/screen.scss */
+img, iframe {
+  width: 100%;
+  max-width: 100%; }
+
+/* line 33, ../sass/screen.scss */
+section {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 1em; }
+
+/* line 39, ../sass/screen.scss */
+p {
+  line-height: 1.2;
+  margin-bottom: 1em; }
+
+/* line 44, ../sass/screen.scss */
+.container {
+  padding: 0 0.25em; }
+
+/* line 50, ../sass/screen.scss */
+.company-branding {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 1em; }
+
+/* line 58, ../sass/screen.scss */
+nav ul li {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  font-family: arial, "helvetica neue", helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: #888888;
+  font-size: 1.2em; }
+  /* line 44, ../sass/_typography.scss */
+  nav ul li a {
+    color: #888888;
+    text-decoration: none; }
+    /* line 33, ../sass/_typography.scss */
+    nav ul li a:hover, nav ul li a:focus {
+      color: #626262;
+      text-decoration: underline; }
+  @media (min-width: 37.5em) {
+    /* line 58, ../sass/screen.scss */
+    nav ul li {
+      width: 20%;
+      float: left; } }
+  /* line 66, ../sass/screen.scss */
+  nav ul li a {
+    display: block;
+    line-height: 3em; }
+
+/* line 76, ../sass/screen.scss */
+.search {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 1em;
+  width: 100%; }
+  /* line 79, ../sass/screen.scss */
+  .search input {
+    width: 70%; }
+  /* line 82, ../sass/screen.scss */
+  .search button {
+    width: 25%; }
+
+/* line 97, ../sass/screen.scss */
+input[type="submit"],
+button {
+  width: 25%;
+  margin: 0;
+  padding: 0.25em 1em 0.25em 0.7em;
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 1em;
+  border: none; }
+
+/* line 108, ../sass/screen.scss */
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="url"],
+textarea {
+  padding: 0.5em 0.65em;
+  -webkit-border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  color: #d5d5d5;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  max-width: 500px;
+  border: 1px #cccccc solid; }
+
+/* line 125, ../sass/screen.scss */
+form label {
+  display: block; }
+
+/* line 131, ../sass/screen.scss */
+.button {
+  margin: 1em 0 0;
+  padding: 0.25em 1em 0.25em 0.7em;
+  background: #d5d5d5;
+  color: #888888;
+  font-size: 1em;
+  border: none; }
+
+/* line 142, ../sass/screen.scss */
+.product {
+  margin-bottom: 1em; }
+  /* line 145, ../sass/screen.scss */
+  .product:after {
+    border-bottom: 1px solid #333333;
+    width: 80%;
+    margin: 0 auto;
+    content: ' ';
+    display: block; }

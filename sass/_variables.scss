@@ -1,0 +1,55 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+$text-color: #888;
+$heading-color: $text-color;
+$text-color-subtle: lighten($text-color, 30%);
+$link-color: #555;
+$link-color-hover: darken($link-color, 15%);
+$hightlight-color: #333;
+$hightlight-color-hover: darken($hightlight-color, 15%);
+$border-color: #ccc;
+$background-color: #fff;
+$background-color-subtle: #eee;
+$footer-color: $link-color;
+
+
+//Prefixes definition
+$webkit:true;
+$o:true;
+$moz:true;
+$w3:true;
+$ms:true;
+
+
+/*********************
+TOOLS
+*********************/
+
+/* http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+.image-replacement {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+
+$alert-yellow:      #ebe16f;
+$alert-red:         #fbe3e4;
+$alert-green:       #e6efc2;
+$alert-blue:        #d5edf8;
+
+$black:             #000;
+$white:             #fff;
+
+$bones-pink:        #f01d4f;
+$bones-blue:        #1990db;
+
+/*********************
+TYPOGRAPHY
+*********************/

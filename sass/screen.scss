@@ -1,0 +1,153 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "_reset";
+@import "compass/reset";
+
+@import "_mixins";
+
+@import "_variables";
+
+@import "_typography";
+
+body {
+background-color: $background-color;
+color: $text-color;
+}
+
+a, a:link, a:visited {
+	color: $link-color;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $link-color-hover;
+}
+
+img, iframe {
+	width: 100%;
+	max-width: 100%;
+}
+
+section {
+	padding:0; 
+	margin:0;
+	@include divider-bottom;
+}
+
+p {
+	line-height: 1.2;
+	margin-bottom: 1em;
+}
+
+.container {
+	padding: 0 0.25em;
+}
+
+// Logo & Branding //
+
+.company-branding {
+	@include divider-bottom;
+}
+
+// Navigation //
+
+nav {
+	ul {
+		li {
+			border-bottom: 1px solid #ccc;
+			text-align: center;
+			@include heading-4;
+			@include breakpoint(phablet){
+				width: 20%;
+				float:left;
+			}
+			a {
+				display: block;
+				line-height: 3em;
+			}
+		}
+	}
+}
+
+// Search //
+
+.search {
+	@include divider-bottom;
+	width: 100%;
+	input {
+		width: 70%;
+	}
+	button {
+		width: 25%;
+	}
+}
+
+// FORMS //
+
+// get rid of "default" iOS button styling for submit buttons
+input[type=submit] {
+//  @include appearance(none);
+}
+
+
+
+
+input[type="submit"],
+button {
+	width: 25%;
+	margin: 0;
+	padding: 0.25em 1em 0.25em 0.7em;
+	background: rgba(0,0,0,0.08);
+	color: rgba(0,0,0,0.45);
+	font-size: 1em;
+	border: none;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="url"],
+textarea {
+  padding: 0.5em 0.65em;
+  @include border-radius(2px);
+  color: $text-color-subtle;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  max-width: 500px;
+  border: 1px $border-color solid;
+}
+
+form label {
+  display: block;
+}
+
+// Buttons //
+
+.button {
+	margin: 1em 0 0;
+	padding: 0.25em 1em 0.25em 0.7em;
+	background: $text-color-subtle;
+	color: $text-color;
+	font-size: 1em;
+	border: none;
+}
+
+// Products //
+
+.product {
+	margin-bottom: 1em;
+
+	&:after {
+		border-bottom: 1px solid $hightlight-color;
+		width: 80%;
+		margin:0 auto;
+		content: ' ';
+		display:block;
+	}
+}
+

@@ -1,0 +1,203 @@
+
+//Gradient Mixin
+@mixin gradient($mode,$direction,$from,$to,$oldDirection:null){
+
+    @if $webkit == true {
+        @if($oldDirection != null){
+            background-image: -webkit-gradient($mode, #{$oldDirection}, from($from),to($to));
+        }
+        background-image: -webkit-#{$mode}-gradient($direction, $from, $to);
+    }
+    @if $moz == true {
+        background-image: -moz-#{$mode}-gradient($direction, $from, $to);
+    }
+    @if $o == true {
+        background-image: -o-#{$mode}-gradient($direction, $from, $to);
+    }
+    @if $ms == true {
+        background-image: -ms-#{$mode}-gradient($direction, $from, $to);
+    }
+    @if $w3 == true {
+        background-image: #{$mode}-gradient($direction, $from, $to);
+    }
+}
+
+
+/*********************
+CLEARFIXIN'
+*********************/
+
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    zoom: 1;
+}
+
+@mixin clearit {
+     &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    zoom: 1;
+}
+
+
+
+
+/*********************
+BORDER RADIUS
+*********************/
+
+/*
+NOTE: For older browser support (and some mobile),
+don't use the shorthand to define *different* corners.
+
+USAGE: @include rounded(4px);
+
+*/
+@mixin rounded($radius: 4px) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius:    $radius;
+    border-radius:         $radius;
+}
+
+/*
+Instead of having a seperate mixin for the different
+borders, we're using the mixin from 320 & Up to make
+things easier to use.
+
+USAGE: @include border-radius(4px,4px,0,0);
+
+*/
+@mixin border-radius($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
+    -webkit-border-top-right-radius:    $topright;
+    -webkit-border-bottom-right-radius: $bottomright;
+    -webkit-border-bottom-left-radius:  $bottomleft;
+    -webkit-border-top-left-radius:     $topleft;
+    -moz-border-radius-topright:        $topright;
+    -moz-border-radius-bottomright:     $bottomright;
+    -moz-border-radius-bottomleft:      $bottomleft;
+    -moz-border-radius-topleft:         $topleft;
+    border-top-right-radius:            $topright;
+    border-bottom-right-radius:         $bottomright;
+    border-bottom-left-radius:          $bottomleft;
+    border-top-left-radius:             $topleft;
+    -webkit-background-clip:            padding-box;
+    -moz-background-clip:               padding;
+    background-clip:                    padding-box;
+}
+
+
+/*********************
+TRANISTION
+*********************/
+
+/* @include transition(all,2s,ease-out); */
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+    -webkit-transition: $what $time $how;
+    -moz-transition:    $what $time $how;
+    -ms-transition:     $what $time $how;
+    -o-transition:      $what $time $how;
+    transition:         $what $time $how;
+}
+
+/*********************
+BREAKPOINTS
+
+*********************/
+
+
+ @mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 70em) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (min-width: 64em) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: 50em) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 37.5em)  { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 37.5em)  { @content ; }
+
+  }
+}
+
+@mixin divider-bottom {
+  padding-bottom: 1em;
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 1em;
+}
+
+@mixin divider-top {
+  padding-top: 1em;
+  border-top: 1px solid $border-color;
+  margin-top: 1em;
+}
+
+@mixin divider-right {
+  padding-right: 1em;
+  border-right: 1px solid $border-color;
+  margin-right: 1em;
+}
+
+@mixin divider-left {
+  padding-left: 1em;
+  border-left: 1px solid $border-color;
+  margin-left: 1em;
+}
+
+@mixin divider-none {
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+}
+
+@mixin button {
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: $background-color;
+  background-color: $link-color;
+  @include border-radius(4px);
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: $link-color-hover;
+  }
+}
+
+@mixin button-reverse {
+  @include button;
+  background-color: $background-color-subtle;
+  color: $link-color;
+  &:hover,
+  &:focus {
+    color: $link-color-hover;
+    background-color: $background-color;
+  }
+}
+
+@mixin button-form {
+  @include button;
+  border: 0 none;
+  font-size: 1em;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
