@@ -69,6 +69,8 @@ p {
 nav {
 	ul {
 		li {
+			display: none;
+			.show-hide-menu & {display:block;}
 			border-bottom: 1px solid #ccc;
 			text-align: center;
 			@include heading-4;
@@ -80,7 +82,7 @@ nav {
 					}
 			}
 			margin-bottom:0;
-			@include breakpoint(phablet){
+			@include breakpoint(tablet){
 				width: 20%;
 				float:left;
 			}

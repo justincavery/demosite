@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script>
+		var gaData = eval('({"kind":"analytics#gaData","id":"https://www.googleapis.com/analytics/v3/data/ga?ids=ga:72260901&amp;dimensions=ga:pageTitle&amp;metrics=ga:visitors,ga:visitBounceRate,ga:visits,ga:organicSearches,ga:avgTimeOnPage,ga:entrances,ga:exitRate,ga:avgPageLoadTime,ga:goalConversionRateAll,ga:percentNewVisits&amp;filters=ga:pagePath%3D%3D/presentation/e-commerce&amp;start-date=30daysAgo&amp;end-date=yesterday&amp;max-results=50","query":{"start-date":"30daysAgo","end-date":"yesterday","ids":"ga:72260901","dimensions":"ga:pageTitle","metrics":["ga:visitors","ga:visitBounceRate","ga:visits","ga:organicSearches","ga:avgTimeOnPage","ga:entrances","ga:exitRate","ga:avgPageLoadTime","ga:goalConversionRateAll","ga:percentNewVisits"],"filters":"ga:pagePath==/presentation/e-commerce","start-index":1,"max-results":50},"itemsPerPage":50,"totalResults":1,"selfLink":"https://www.googleapis.com/analytics/v3/data/ga?ids=ga:72260901&amp;dimensions=ga:pageTitle&amp;metrics=ga:visitors,ga:visitBounceRate,ga:visits,ga:organicSearches,ga:avgTimeOnPage,ga:entrances,ga:exitRate,ga:avgPageLoadTime,ga:goalConversionRateAll,ga:percentNewVisits&amp;filters=ga:pagePath%3D%3D/presentation/e-commerce&amp;start-date=30daysAgo&amp;end-date=yesterday&amp;max-results=50","profileInfo":{"profileId":"72260901","accountId":"40815405","webPropertyId":"UA-40815405-1","internalWebPropertyId":"70094572","profileName":"Presales","tableId":"ga:72260901"},"containsSampledData":false,"columnHeaders":[{"name":"ga:pageTitle","columnType":"DIMENSION","dataType":"STRING"},{"name":"ga:visitors","columnType":"METRIC","dataType":"INTEGER"},{"name":"ga:visitBounceRate","columnType":"METRIC","dataType":"PERCENT"},{"name":"ga:visits","columnType":"METRIC","dataType":"INTEGER"},{"name":"ga:organicSearches","columnType":"METRIC","dataType":"INTEGER"},{"name":"ga:avgTimeOnPage","columnType":"METRIC","dataType":"TIME"},{"name":"ga:entrances","columnType":"METRIC","dataType":"INTEGER"},{"name":"ga:exitRate","columnType":"METRIC","dataType":"PERCENT"},{"name":"ga:avgPageLoadTime","columnType":"METRIC","dataType":"FLOAT"},{"name":"ga:goalConversionRateAll","columnType":"METRIC","dataType":"PERCENT"},{"name":"ga:percentNewVisits","columnType":"METRIC","dataType":"PERCENT"}],"totalsForAllResults":{"ga:visitors":"3","ga:visitBounceRate":"66.66666666666666","ga:visits":"3","ga:organicSearches":"0","ga:avgTimeOnPage":"257.0","ga:entrances":"3","ga:exitRate":"40.0","ga:avgPageLoadTime":"0.0","ga:goalConversionRateAll":"0.0","ga:percentNewVisits":"0.0"},"rows":[["E-CommerceSalesathon","3","66.66666666666666","3","0","257.0","3","40.0","0.0","0.0","0.0"]]})'); 
+		gaData = gaData.totalsForAllResults; print('
+		<div class="container row">
+			'); for (var key in gaData) { if (gaData.hasOwnProperty(key)) { print('
+			<div class="module large-4 columns">
+				<h2>
+					' + key + '
+				</h2><span>' + gaData[key] + '</span>
+			</div>'); } } // get the individual values. Hoorah! print(gaData['ga:visitors']); print('
+		</div>');
+</script>
+
+	</body>
+</html>
